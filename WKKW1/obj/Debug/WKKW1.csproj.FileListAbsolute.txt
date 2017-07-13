@@ -1,0 +1,9 @@
+c:\users\galaxis\documents\visual studio 2015\Projects\WKKW1\WKKW1\bin\Debug\WKKW1.exe.config
+c:\users\galaxis\documents\visual studio 2015\Projects\WKKW1\WKKW1\bin\Debug\WKKW1.exe
+c:\users\galaxis\documents\visual studio 2015\Projects\WKKW1\WKKW1\bin\Debug\WKKW1.pdb
+c:\users\galaxis\documents\visual studio 2015\Projects\WKKW1\WKKW1\obj\Debug\WKKW1.Form1.resources
+c:\users\galaxis\documents\visual studio 2015\Projects\WKKW1\WKKW1\obj\Debug\WKKW1.Properties.Resources.resources
+c:\users\galaxis\documents\visual studio 2015\Projects\WKKW1\WKKW1\obj\Debug\WKKW1.csproj.GenerateResource.Cache
+c:\users\galaxis\documents\visual studio 2015\Projects\WKKW1\WKKW1\obj\Debug\WKKW1.exe
+c:\users\galaxis\documents\visual studio 2015\Projects\WKKW1\WKKW1\obj\Debug\WKKW1.pdb
+c:\users\galaxis\documents\visual studio 2015\Projects\WKKW1\WKKW1\obj\Debug\WKKW1.csprojResolveAssemblyReference.cache
