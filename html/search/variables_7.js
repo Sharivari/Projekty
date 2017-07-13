@@ -1,6 +1,25 @@
 var searchData=
 [
-  ['haslo',['Haslo',['../class_dziennik_ocen_1_1_form_prowadzacy.html#a97552a9d67d35422ddc14b94222d100b',1,'DziennikOcen.FormProwadzacy.Haslo()'],['../class_dziennik_ocen_1_1_form_student.html#a605a1d835840f2800e5f86171d6dbe07',1,'DziennikOcen.FormStudent.Haslo()']]],
-  ['haslodatagridviewtextboxcolumn',['hasloDataGridViewTextBoxColumn',['../class_dziennik_ocen_1_1_form_admin.html#a013f9ee1a23f86778e6c66155b1bf93e',1,'DziennikOcen.FormAdmin.hasloDataGridViewTextBoxColumn()'],['../class_dziennik_ocen_1_1_form_student.html#aa3a09279916f9f9af11df4ca4f4e4a2a',1,'DziennikOcen.FormStudent.hasloDataGridViewTextBoxColumn()']]],
-  ['haslodatagridviewtextboxcolumn1',['hasloDataGridViewTextBoxColumn1',['../class_dziennik_ocen_1_1_form_admin.html#a8864db3ba24c0e8c5b6d6aa3a1278601',1,'DziennikOcen::FormAdmin']]]
+  ['textbox_5fprojekt_5fnazwaprojektu',['TextBox_Projekt_nazwaProjektu',['../class_dziennik_ocen_web2_1_1_web_form1.html#a9ffad4170ae3c4a41c89ea8ff21f5c79',1,'DziennikOcenWeb2::WebForm1']]],
+  ['textbox_5fprojekt_5fopisprojektu',['TextBox_Projekt_opisProjektu',['../class_dziennik_ocen_web2_1_1_web_form1.html#a6ea6a10c6b9029ab3963c4032019257f',1,'DziennikOcenWeb2::WebForm1']]],
+  ['textbox_5fprojekty_5fdataprojektu',['TextBox_Projekty_dataProjektu',['../class_dziennik_ocen_web2_1_1_web_form1.html#a2f98d4ead21263b9c611a81eecbcbd24',1,'DziennikOcenWeb2::WebForm1']]],
+  ['textbox_5fprojekty_5fdataprojektu0',['TextBox_Projekty_dataProjektu0',['../class_dziennik_ocen_web2_1_1_web_form1.html#aebb640122d0045069b76a51dd72d86be',1,'DziennikOcenWeb2::WebForm1']]],
+  ['textbox_5fprojekty_5focena',['TextBox_Projekty_ocena',['../class_dziennik_ocen_web2_1_1_web_form1.html#aa4ba06f7e833012a4b33e57bc3850a5b',1,'DziennikOcenWeb2::WebForm1']]],
+  ['textbox_5fprojekty_5focena0',['TextBox_Projekty_ocena0',['../class_dziennik_ocen_web2_1_1_web_form1.html#a5a77cbbbe25b39b4f8a5639be94ac841',1,'DziennikOcenWeb2::WebForm1']]],
+  ['textbox_5fprojekty_5fuwagi',['TextBox_Projekty_uwagi',['../class_dziennik_ocen_web2_1_1_web_form1.html#a43df52d8c914980d8f9a8b377884aa09',1,'DziennikOcenWeb2::WebForm1']]],
+  ['textbox_5fprojekty_5fuwagi0',['TextBox_Projekty_uwagi0',['../class_dziennik_ocen_web2_1_1_web_form1.html#a8816d59dd0d3387f0bc5f4b22df7e73d',1,'DziennikOcenWeb2::WebForm1']]],
+  ['textbox_5fprzedmioty_5fdatazaliczenia',['TextBox_Przedmioty_dataZaliczenia',['../class_dziennik_ocen_web2_1_1_web_form1.html#a53cf39cd0712712d4a869bd5c846aad7',1,'DziennikOcenWeb2::WebForm1']]],
+  ['textbox_5fprzedmioty_5fdatazaliczenia0',['TextBox_Przedmioty_dataZaliczenia0',['../class_dziennik_ocen_web2_1_1_web_form1.html#ae72a9bfae3378226ad33914e0b3ae263',1,'DziennikOcenWeb2::WebForm1']]],
+  ['textbox_5fprzedmioty_5focenaprzedmiotu',['TextBox_Przedmioty_ocenaPrzedmiotu',['../class_dziennik_ocen_web2_1_1_web_form1.html#acd1f8459612e926ade2856e75348ea7c',1,'DziennikOcenWeb2::WebForm1']]],
+  ['textbox_5fprzedmioty_5focenaprzedmiotu0',['TextBox_Przedmioty_ocenaPrzedmiotu0',['../class_dziennik_ocen_web2_1_1_web_form1.html#a302ee9498b9e5c0bcf7fe1b8f81f3c5e',1,'DziennikOcenWeb2::WebForm1']]],
+  ['textbox_5fprzedmioty_5fuwagi',['TextBox_Przedmioty_uwagi',['../class_dziennik_ocen_web2_1_1_web_form1.html#ab9368c26118387c8cd81c23f679b2974',1,'DziennikOcenWeb2::WebForm1']]],
+  ['textbox_5fprzedmioty_5fuwagi0',['TextBox_Przedmioty_uwagi0',['../class_dziennik_ocen_web2_1_1_web_form1.html#adee12d3b9fb7aed5f516c70ce4d5a114',1,'DziennikOcenWeb2::WebForm1']]],
+  ['textbox_5fstudent_5fadres',['TextBox_Student_adres',['../class_dziennik_ocen_web2_1_1_web_form1.html#a36396ec2cf6138ceca37d487ee5b3bd0',1,'DziennikOcenWeb2::WebForm1']]],
+  ['textbox_5fstudent_5femail',['TextBox_Student_email',['../class_dziennik_ocen_web2_1_1_web_form1.html#afee4730e92c30198c0ed19d8fcfbe9a7',1,'DziennikOcenWeb2::WebForm1']]],
+  ['textbox_5fstudent_5fhaslo',['TextBox_Student_haslo',['../class_dziennik_ocen_web2_1_1_web_form1.html#a0585ebb82159573ec49d9f45cb41e867',1,'DziennikOcenWeb2::WebForm1']]],
+  ['textbox_5fstudent_5fimie',['TextBox_Student_imie',['../class_dziennik_ocen_web2_1_1_web_form1.html#a239f7a307a6f095d48231922986bb266',1,'DziennikOcenWeb2::WebForm1']]],
+  ['textbox_5fstudent_5fnazwisko',['TextBox_Student_nazwisko',['../class_dziennik_ocen_web2_1_1_web_form1.html#a161c5620ac7416db86706166470fd9f4',1,'DziennikOcenWeb2::WebForm1']]],
+  ['textbox_5fstudent_5ftelefon',['TextBox_Student_telefon',['../class_dziennik_ocen_web2_1_1_web_form1.html#a21c07d34e93b30186e57f2a7e6786389',1,'DziennikOcenWeb2::WebForm1']]],
+  ['textboxemail',['TextBoxEmail',['../class_dziennik_ocen_web2_1_1_web_form1.html#afd5c6cbba56f97163e3a77eacbe9f0c5',1,'DziennikOcenWeb2::WebForm1']]],
+  ['textboxhaslo',['TextBoxHaslo',['../class_dziennik_ocen_web2_1_1_web_form1.html#a243a5ae21436ccb946bb3e2e9bc4ae42',1,'DziennikOcenWeb2::WebForm1']]]
 ];

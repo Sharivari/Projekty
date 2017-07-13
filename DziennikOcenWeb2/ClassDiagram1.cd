@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DziennikOcenWeb2.WebForm1">
+    <Position X="0.75" Y="0.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>hpw40qgIwkAQzcsQkDSR6zkw5I2geJl26QAKArcTAoQ=</HashCode>
+      <FileName>WebForm1.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DziennikOcenWeb2.STUDENT">
+    <Position X="4.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAEAAAACAASAAAAAAAAABAAAYAAAQAACAAAE=</HashCode>
+      <FileName>STUDENT.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DziennikOcenWeb2.przedmioty">
+    <Position X="6.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAEAAAAAAAAAAAAAAAAAAAAGAAAgAAIQKAAAAAAAAAA=</HashCode>
+      <FileName>przedmioty.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DziennikOcenWeb2.PRZEDMIOT">
+    <Position X="10.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACACAAAAAAAAACCAQgAAAAAA=</HashCode>
+      <FileName>PRZEDMIOT.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DziennikOcenWeb2.PROWADZĄCY">
+    <Position X="8.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAEAAAACAAwAAAAACAAAAAAAIAAAQAACAAAE=</HashCode>
+      <FileName>PROWADZĄCY.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DziennikOcenWeb2.projekty">
+    <Position X="7.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAKAAGAAAgBAAQAIAAIAAAAAA=</HashCode>
+      <FileName>projekty.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DziennikOcenWeb2.PROJEKT">
+    <Position X="7.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAEAAAAAAAAAgAAAAAAAAAAAAKIAAAAAAAAA=</HashCode>
+      <FileName>PROJEKT.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DziennikOcenWeb2.GRUPA">
+    <Position X="5.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAEAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GRUPA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DziennikOcenWeb2.Global">
+    <Position X="4.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Global.asax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

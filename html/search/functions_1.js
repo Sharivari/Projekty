@@ -1,22 +1,12 @@
 var searchData=
 [
-  ['dgvgrupa_5fcellendedit',['dgvGrupa_CellEndEdit',['../class_dziennik_ocen_1_1_form_admin.html#a3b95eb1c804963f3ea3b3650c71ea4f0',1,'DziennikOcen::FormAdmin']]],
-  ['dgvgrupa_5fuserdeletingrow',['dgvGrupa_UserDeletingRow',['../class_dziennik_ocen_1_1_form_admin.html#a349ce3b1eeed9027c70615a77d250a5d',1,'DziennikOcen::FormAdmin']]],
-  ['dgvprojekt_5fcellendedit',['dgvProjekt_CellEndEdit',['../class_dziennik_ocen_1_1_form_admin.html#a2f6a990aa7890c543a9b7d6cda212884',1,'DziennikOcen::FormAdmin']]],
-  ['dgvprojekt_5fuserdeletingrow',['dgvProjekt_UserDeletingRow',['../class_dziennik_ocen_1_1_form_admin.html#ad25ef9fe40bb0f7d995b07c10e053c3d',1,'DziennikOcen::FormAdmin']]],
-  ['dgvprojekty_5fcellendedit',['dgvProjekty_CellEndEdit',['../class_dziennik_ocen_1_1_form_admin.html#a8041f9fec5afec151944bd5eeb7897c8',1,'DziennikOcen::FormAdmin']]],
-  ['dgvprojekty_5fselectionchanged',['dgvProjekty_SelectionChanged',['../class_dziennik_ocen_1_1_form_student.html#a7c84c02d2fb4636dece7caf2c88a4d13',1,'DziennikOcen::FormStudent']]],
-  ['dgvprojekty_5fuserdeletingrow',['dgvProjekty_UserDeletingRow',['../class_dziennik_ocen_1_1_form_admin.html#a48466d6cfac9af36f0a581af601f7906',1,'DziennikOcen::FormAdmin']]],
-  ['dgvprowadzacy_5fcellendedit',['dgvProwadzacy_CellEndEdit',['../class_dziennik_ocen_1_1_form_admin.html#a0b39905ac3fcb424c1d12975643712fa',1,'DziennikOcen::FormAdmin']]],
-  ['dgvprowadzacy_5fuserdeletingrow',['dgvProwadzacy_UserDeletingRow',['../class_dziennik_ocen_1_1_form_admin.html#aaf3a81a886da60aae87a34b5ca2e3d4d',1,'DziennikOcen::FormAdmin']]],
-  ['dgvprzedmiot_5fcellendedit',['dgvPrzedmiot_CellEndEdit',['../class_dziennik_ocen_1_1_form_admin.html#adf080cf9bf6ce910be2b1b539c5c6bc2',1,'DziennikOcen::FormAdmin']]],
-  ['dgvprzedmiot_5fuserdeletingrow',['dgvPrzedmiot_UserDeletingRow',['../class_dziennik_ocen_1_1_form_admin.html#a5ff03e7113d930afdf9d0c651734fae0',1,'DziennikOcen::FormAdmin']]],
-  ['dgvprzedmioty_5fcellendedit',['dgvPrzedmioty_CellEndEdit',['../class_dziennik_ocen_1_1_form_admin.html#ace196eca0cd55af280cb7e4a1a75a540',1,'DziennikOcen::FormAdmin']]],
-  ['dgvprzedmioty_5fuserdeletingrow',['dgvPrzedmioty_UserDeletingRow',['../class_dziennik_ocen_1_1_form_admin.html#a3e68e6b9a8298d9e207cb0aba20b161b',1,'DziennikOcen::FormAdmin']]],
-  ['dgvstudenci_5fmouseclick',['dgvStudenci_MouseClick',['../class_dziennik_ocen_1_1_form_prowadzacy.html#acbf83dbd039b578f4e66d933668f50f1',1,'DziennikOcen::FormProwadzacy']]],
-  ['dgvstudenciprojekty_5fselectionchanged',['dgvStudenciProjekty_SelectionChanged',['../class_dziennik_ocen_1_1_form_prowadzacy.html#a3947fae964426bffb87f3dde229681f4',1,'DziennikOcen::FormProwadzacy']]],
-  ['dgvstudent_5fcellendedit',['dgvStudent_CellEndEdit',['../class_dziennik_ocen_1_1_form_admin.html#a164792e99a2213c5e62870c2ffee0d31',1,'DziennikOcen::FormAdmin']]],
-  ['dgvstudent_5fuserdeletingrow',['dgvStudent_UserDeletingRow',['../class_dziennik_ocen_1_1_form_admin.html#af3ef7cac8cbb4acf92efdd1c3d278647',1,'DziennikOcen::FormAdmin']]],
-  ['dispose',['Dispose',['../class_dziennik_ocen_1_1_form1.html#a64a7924e831567e78bb499a6baa0e543',1,'DziennikOcen.Form1.Dispose()'],['../class_dziennik_ocen_1_1_form_admin.html#a226138ac8da3cb8b2064e61823c13a3a',1,'DziennikOcen.FormAdmin.Dispose()'],['../class_dziennik_ocen_1_1_form_projekt.html#a78ce43373f97d5189228be2bd0a986db',1,'DziennikOcen.FormProjekt.Dispose()'],['../class_dziennik_ocen_1_1_form_prowadzacy.html#a33b9f735dca4c248819321d0692c98c5',1,'DziennikOcen.FormProwadzacy.Dispose()'],['../class_dziennik_ocen_1_1_form_student.html#a2b1c3e297618729ddc9b97963d9bddda',1,'DziennikOcen.FormStudent.Dispose()'],['../class_dziennik_ocen_1_1_form_zarzadzaj_projektem.html#ac03323290cf11c8dbd8d88703dca9b0f',1,'DziennikOcen.FormZarzadzajProjektem.Dispose()'],['../class_dziennik_ocen_1_1_form_zarzadzaj_studentem.html#a90df6d8bdf00f5ce184053c526952368',1,'DziennikOcen.FormZarzadzajStudentem.Dispose()']]],
-  ['dziennikocenentities',['DziennikOcenEntities',['../class_dziennik_ocen_1_1_dziennik_ocen_entities.html#ac3342686c2273ce2aa63726dd18c30de',1,'DziennikOcen::DziennikOcenEntities']]]
+  ['button1_5fclick',['Button1_Click',['../class_dziennik_ocen_web2_1_1_web_form1.html#a42c9efde3f2521e876ec3e9ab6217b4f',1,'DziennikOcenWeb2::WebForm1']]],
+  ['button2_5fclick',['Button2_Click',['../class_dziennik_ocen_web2_1_1_web_form1.html#aa743385735daea1ff89ee7942693aaec',1,'DziennikOcenWeb2::WebForm1']]],
+  ['button3_5fclick',['Button3_Click',['../class_dziennik_ocen_web2_1_1_web_form1.html#aefb1ce8922cf82b4eb7e5e42e59b3f7d',1,'DziennikOcenWeb2::WebForm1']]],
+  ['button4_5fclick',['Button4_Click',['../class_dziennik_ocen_web2_1_1_web_form1.html#a8b588699eca20966d75ba7e454ef01eb',1,'DziennikOcenWeb2::WebForm1']]],
+  ['button_5fdodajprojekt_5fclick',['Button_DodajProjekt_Click',['../class_dziennik_ocen_web2_1_1_web_form1.html#a231125238692401bbf89113d844e9e4b',1,'DziennikOcenWeb2::WebForm1']]],
+  ['button_5fdodajprojekty_5fclick',['Button_DodajProjekty_Click',['../class_dziennik_ocen_web2_1_1_web_form1.html#aed94ee8575b41f7814a7955246d6ead4',1,'DziennikOcenWeb2::WebForm1']]],
+  ['button_5fdodajprzedmioty_5fclick',['Button_DodajPrzedmioty_Click',['../class_dziennik_ocen_web2_1_1_web_form1.html#a91c8516e0424804b520f798d112c6feb',1,'DziennikOcenWeb2::WebForm1']]],
+  ['button_5fdodajstudent_5fclick',['Button_DodajStudent_Click',['../class_dziennik_ocen_web2_1_1_web_form1.html#a744c3c80bc4d8258797f13a886cd6087',1,'DziennikOcenWeb2::WebForm1']]],
+  ['button_5fstudent_5fzapiszsiedoprojektu_5fclick',['Button_Student_zapiszsiedoprojektu_Click',['../class_dziennik_ocen_web2_1_1_web_form1.html#a479205a9a82393a787866873176ab319',1,'DziennikOcenWeb2::WebForm1']]]
 ];

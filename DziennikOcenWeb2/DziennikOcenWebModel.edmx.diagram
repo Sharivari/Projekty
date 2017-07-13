@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="39c2ecf8d6c14f8aae5a669c9c3c0bde" Name="Diagram1">
+        <EntityTypeShape EntityType="DziennikOcenModel.GRUPA" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DziennikOcenModel.PROJEKT" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DziennikOcenModel.projekty" Width="1.5" PointX="5.25" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DziennikOcenModel.PROWADZĄCY" Width="1.5" PointX="3" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DziennikOcenModel.PRZEDMIOT" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DziennikOcenModel.przedmioty" Width="1.5" PointX="8.25" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DziennikOcenModel.STUDENT" Width="1.5" PointX="3" PointY="4.125" IsExpanded="true" />
+        <AssociationConnector Association="DziennikOcenModel.FK_STUDENT_GRUPA" ManuallyRouted="false" />
+        <AssociationConnector Association="DziennikOcenModel.FK_PROJEKT_PRZEDMIOT" ManuallyRouted="false" />
+        <AssociationConnector Association="DziennikOcenModel.FK_projekty_PROJEKT" ManuallyRouted="false" />
+        <AssociationConnector Association="DziennikOcenModel.FK_projekty_PROWADZĄCY" ManuallyRouted="false" />
+        <AssociationConnector Association="DziennikOcenModel.FK_projekty_STUDENT" ManuallyRouted="false" />
+        <AssociationConnector Association="DziennikOcenModel.FK_przedmioty_PROWADZĄCY" ManuallyRouted="false" />
+        <AssociationConnector Association="DziennikOcenModel.FK_przedmioty_PRZEDMIOT" ManuallyRouted="false" />
+        <AssociationConnector Association="DziennikOcenModel.FK_przedmioty_STUDENT" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

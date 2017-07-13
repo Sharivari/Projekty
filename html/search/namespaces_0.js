@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dziennikocen',['DziennikOcen',['../namespace_dziennik_ocen.html',1,'']]]
+  ['dziennikocenweb2',['DziennikOcenWeb2',['../namespace_dziennik_ocen_web2.html',1,'']]]
 ];

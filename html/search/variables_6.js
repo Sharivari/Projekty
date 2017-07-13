@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['grupadatagridviewtextboxcolumn',['gRUPADataGridViewTextBoxColumn',['../class_dziennik_ocen_1_1_form_admin.html#a6fc44af8dd2ad779199a11f1a2a3769d',1,'DziennikOcen::FormAdmin']]]
+  ['student',['student',['../class_dziennik_ocen_web2_1_1_web_form1.html#a91ac405a6d3e3a700685501c6ea67fb0',1,'DziennikOcenWeb2::WebForm1']]],
+  ['studentt',['Studentt',['../class_dziennik_ocen_web2_1_1_web_form1.html#aea29c07bdcfe5faa4ec1cccba2cefdbc',1,'DziennikOcenWeb2::WebForm1']]]
 ];

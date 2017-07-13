@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DziennikOcenModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="GRUPA">
+    <Key>
+      <PropertyRef Name="id_GRUPY" />
+    </Key>
+    <Property Name="id_GRUPY" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nazwa_grupy" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="STUDENT" Relationship="Self.FK_STUDENT_GRUPA" FromRole="GRUPA" ToRole="STUDENT" />
+  </EntityType>
+  <EntityType Name="PROJEKT">
+    <Key>
+      <PropertyRef Name="id_PROJEKTU" />
+    </Key>
+    <Property Name="id_PROJEKTU" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_PRZEDMIOTU" Type="Int32" />
+    <Property Name="nazwa_projektu" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="opis_projektu" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PRZEDMIOT" Relationship="Self.FK_PROJEKT_PRZEDMIOT" FromRole="PROJEKT" ToRole="PRZEDMIOT" />
+    <NavigationProperty Name="projekty" Relationship="Self.FK_projekty_PROJEKT" FromRole="PROJEKT" ToRole="projekty" />
+  </EntityType>
+  <EntityType Name="projekty">
+    <Key>
+      <PropertyRef Name="id_STUDENTA" />
+      <PropertyRef Name="id_PROJEKTU" />
+      <PropertyRef Name="id_PROWADZĄCEGO" />
+    </Key>
+    <Property Name="id_STUDENTA" Type="Int32" Nullable="false" />
+    <Property Name="id_PROJEKTU" Type="Int32" Nullable="false" />
+    <Property Name="id_PROWADZĄCEGO" Type="Int32" Nullable="false" />
+    <Property Name="ocena_projektu" Type="Int32" />
+    <Property Name="data_projektu" Type="DateTime" Precision="3" />
+    <Property Name="uwagi_projektu" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PROJEKT" Relationship="Self.FK_projekty_PROJEKT" FromRole="projekty" ToRole="PROJEKT" />
+    <NavigationProperty Name="PROWADZĄCY" Relationship="Self.FK_projekty_PROWADZĄCY" FromRole="projekty" ToRole="PROWADZĄCY" />
+    <NavigationProperty Name="STUDENT" Relationship="Self.FK_projekty_STUDENT" FromRole="projekty" ToRole="STUDENT" />
+  </EntityType>
+  <EntityType Name="PROWADZĄCY">
+    <Key>
+      <PropertyRef Name="id_PROWADZĄCEGO" />
+    </Key>
+    <Property Name="id_PROWADZĄCEGO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="imie" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="nazwisko" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="telefon" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="adres" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="e_mail" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="haslo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="stanowisko" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="projekty" Relationship="Self.FK_projekty_PROWADZĄCY" FromRole="PROWADZĄCY" ToRole="projekty" />
+    <NavigationProperty Name="przedmioty" Relationship="Self.FK_przedmioty_PROWADZĄCY" FromRole="PROWADZĄCY" ToRole="przedmioty" />
+  </EntityType>
+  <EntityType Name="PRZEDMIOT">
+    <Key>
+      <PropertyRef Name="id_PRZEDMIOTU" />
+    </Key>
+    <Property Name="id_PRZEDMIOTU" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nazwa_przedmiotu" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="opis_przedmiotu" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ECTS" Type="Int32" />
+    <NavigationProperty Name="PROJEKT" Relationship="Self.FK_PROJEKT_PRZEDMIOT" FromRole="PRZEDMIOT" ToRole="PROJEKT" />
+    <NavigationProperty Name="przedmioty" Relationship="Self.FK_przedmioty_PRZEDMIOT" FromRole="PRZEDMIOT" ToRole="przedmioty" />
+  </EntityType>
+  <EntityType Name="przedmioty">
+    <Key>
+      <PropertyRef Name="id_STUDENTA" />
+      <PropertyRef Name="id_PROWADZĄCEGO" />
+      <PropertyRef Name="id_PRZEDMIOTU" />
+    </Key>
+    <Property Name="id_STUDENTA" Type="Int32" Nullable="false" />
+    <Property Name="id_PROWADZĄCEGO" Type="Int32" Nullable="false" />
+    <Property Name="id_PRZEDMIOTU" Type="Int32" Nullable="false" />
+    <Property Name="ocena_przedmiotu" Type="Int32" />
+    <Property Name="data_zaliczenia_przedmiotu" Type="DateTime" Precision="3" />
+    <Property Name="uwagi_przedmiotu" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PROWADZĄCY" Relationship="Self.FK_przedmioty_PROWADZĄCY" FromRole="przedmioty" ToRole="PROWADZĄCY" />
+    <NavigationProperty Name="PRZEDMIOT" Relationship="Self.FK_przedmioty_PRZEDMIOT" FromRole="przedmioty" ToRole="PRZEDMIOT" />
+    <NavigationProperty Name="STUDENT" Relationship="Self.FK_przedmioty_STUDENT" FromRole="przedmioty" ToRole="STUDENT" />
+  </EntityType>
+  <EntityType Name="STUDENT">
+    <Key>
+      <PropertyRef Name="id_STUDENTA" />
+    </Key>
+    <Property Name="id_STUDENTA" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_GRUPY" Type="Int32" Nullable="false" />
+    <Property Name="imie" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="nazwisko" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="telefon" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="adres" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="e_mail" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="haslo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GRUPA" Relationship="Self.FK_STUDENT_GRUPA" FromRole="STUDENT" ToRole="GRUPA" />
+    <NavigationProperty Name="projekty" Relationship="Self.FK_projekty_STUDENT" FromRole="STUDENT" ToRole="projekty" />
+    <NavigationProperty Name="przedmioty" Relationship="Self.FK_przedmioty_STUDENT" FromRole="STUDENT" ToRole="przedmioty" />
+  </EntityType>
+  <Association Name="FK_STUDENT_GRUPA">
+    <End Role="GRUPA" Type="Self.GRUPA" Multiplicity="1" />
+    <End Role="STUDENT" Type="Self.STUDENT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GRUPA">
+        <PropertyRef Name="id_GRUPY" />
+      </Principal>
+      <Dependent Role="STUDENT">
+        <PropertyRef Name="id_GRUPY" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PROJEKT_PRZEDMIOT">
+    <End Role="PRZEDMIOT" Type="Self.PRZEDMIOT" Multiplicity="0..1" />
+    <End Role="PROJEKT" Type="Self.PROJEKT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRZEDMIOT">
+        <PropertyRef Name="id_PRZEDMIOTU" />
+      </Principal>
+      <Dependent Role="PROJEKT">
+        <PropertyRef Name="id_PRZEDMIOTU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_projekty_PROJEKT">
+    <End Role="PROJEKT" Type="Self.PROJEKT" Multiplicity="1" />
+    <End Role="projekty" Type="Self.projekty" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PROJEKT">
+        <PropertyRef Name="id_PROJEKTU" />
+      </Principal>
+      <Dependent Role="projekty">
+        <PropertyRef Name="id_PROJEKTU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_projekty_PROWADZĄCY">
+    <End Role="PROWADZĄCY" Type="Self.PROWADZĄCY" Multiplicity="1" />
+    <End Role="projekty" Type="Self.projekty" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PROWADZĄCY">
+        <PropertyRef Name="id_PROWADZĄCEGO" />
+      </Principal>
+      <Dependent Role="projekty">
+        <PropertyRef Name="id_PROWADZĄCEGO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_projekty_STUDENT">
+    <End Role="STUDENT" Type="Self.STUDENT" Multiplicity="1" />
+    <End Role="projekty" Type="Self.projekty" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="STUDENT">
+        <PropertyRef Name="id_STUDENTA" />
+      </Principal>
+      <Dependent Role="projekty">
+        <PropertyRef Name="id_STUDENTA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_przedmioty_PROWADZĄCY">
+    <End Role="PROWADZĄCY" Type="Self.PROWADZĄCY" Multiplicity="1" />
+    <End Role="przedmioty" Type="Self.przedmioty" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PROWADZĄCY">
+        <PropertyRef Name="id_PROWADZĄCEGO" />
+      </Principal>
+      <Dependent Role="przedmioty">
+        <PropertyRef Name="id_PROWADZĄCEGO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_przedmioty_PRZEDMIOT">
+    <End Role="PRZEDMIOT" Type="Self.PRZEDMIOT" Multiplicity="1" />
+    <End Role="przedmioty" Type="Self.przedmioty" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRZEDMIOT">
+        <PropertyRef Name="id_PRZEDMIOTU" />
+      </Principal>
+      <Dependent Role="przedmioty">
+        <PropertyRef Name="id_PRZEDMIOTU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_przedmioty_STUDENT">
+    <End Role="STUDENT" Type="Self.STUDENT" Multiplicity="1" />
+    <End Role="przedmioty" Type="Self.przedmioty" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="STUDENT">
+        <PropertyRef Name="id_STUDENTA" />
+      </Principal>
+      <Dependent Role="przedmioty">
+        <PropertyRef Name="id_STUDENTA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DziennikOcenEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="GRUPA" EntityType="Self.GRUPA" />
+    <EntitySet Name="PROJEKT" EntityType="Self.PROJEKT" />
+    <EntitySet Name="projekty" EntityType="Self.projekty" />
+    <EntitySet Name="PROWADZĄCY" EntityType="Self.PROWADZĄCY" />
+    <EntitySet Name="PRZEDMIOT" EntityType="Self.PRZEDMIOT" />
+    <EntitySet Name="przedmioty" EntityType="Self.przedmioty" />
+    <EntitySet Name="STUDENT" EntityType="Self.STUDENT" />
+    <AssociationSet Name="FK_STUDENT_GRUPA" Association="Self.FK_STUDENT_GRUPA">
+      <End Role="GRUPA" EntitySet="GRUPA" />
+      <End Role="STUDENT" EntitySet="STUDENT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PROJEKT_PRZEDMIOT" Association="Self.FK_PROJEKT_PRZEDMIOT">
+      <End Role="PRZEDMIOT" EntitySet="PRZEDMIOT" />
+      <End Role="PROJEKT" EntitySet="PROJEKT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_projekty_PROJEKT" Association="Self.FK_projekty_PROJEKT">
+      <End Role="PROJEKT" EntitySet="PROJEKT" />
+      <End Role="projekty" EntitySet="projekty" />
+    </AssociationSet>
+    <AssociationSet Name="FK_projekty_PROWADZĄCY" Association="Self.FK_projekty_PROWADZĄCY">
+      <End Role="PROWADZĄCY" EntitySet="PROWADZĄCY" />
+      <End Role="projekty" EntitySet="projekty" />
+    </AssociationSet>
+    <AssociationSet Name="FK_projekty_STUDENT" Association="Self.FK_projekty_STUDENT">
+      <End Role="STUDENT" EntitySet="STUDENT" />
+      <End Role="projekty" EntitySet="projekty" />
+    </AssociationSet>
+    <AssociationSet Name="FK_przedmioty_PROWADZĄCY" Association="Self.FK_przedmioty_PROWADZĄCY">
+      <End Role="PROWADZĄCY" EntitySet="PROWADZĄCY" />
+      <End Role="przedmioty" EntitySet="przedmioty" />
+    </AssociationSet>
+    <AssociationSet Name="FK_przedmioty_PRZEDMIOT" Association="Self.FK_przedmioty_PRZEDMIOT">
+      <End Role="PRZEDMIOT" EntitySet="PRZEDMIOT" />
+      <End Role="przedmioty" EntitySet="przedmioty" />
+    </AssociationSet>
+    <AssociationSet Name="FK_przedmioty_STUDENT" Association="Self.FK_przedmioty_STUDENT">
+      <End Role="STUDENT" EntitySet="STUDENT" />
+      <End Role="przedmioty" EntitySet="przedmioty" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
