@@ -1,0 +1,6 @@
+c:\users\galaxis\documents\visual studio 2015\Projects\Spain\Spain\bin\Debug\Spain.exe.config
+c:\users\galaxis\documents\visual studio 2015\Projects\Spain\Spain\bin\Debug\Spain.exe
+c:\users\galaxis\documents\visual studio 2015\Projects\Spain\Spain\bin\Debug\Spain.pdb
+c:\users\galaxis\documents\visual studio 2015\Projects\Spain\Spain\obj\Debug\Spain.csprojResolveAssemblyReference.cache
+c:\users\galaxis\documents\visual studio 2015\Projects\Spain\Spain\obj\Debug\Spain.exe
+c:\users\galaxis\documents\visual studio 2015\Projects\Spain\Spain\obj\Debug\Spain.pdb
