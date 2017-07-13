@@ -1,0 +1,8 @@
+C:\Users\Galaxis\documents\visual studio 2015\Projects\Prototyp1\Prototyp1\bin\Release\Prototyp1.exe.config
+C:\Users\Galaxis\documents\visual studio 2015\Projects\Prototyp1\Prototyp1\bin\Release\Prototyp1.exe
+C:\Users\Galaxis\documents\visual studio 2015\Projects\Prototyp1\Prototyp1\bin\Release\Prototyp1.pdb
+C:\Users\Galaxis\documents\visual studio 2015\Projects\Prototyp1\Prototyp1\obj\Release\Prototyp1.Form1.resources
+C:\Users\Galaxis\documents\visual studio 2015\Projects\Prototyp1\Prototyp1\obj\Release\Prototyp1.Properties.Resources.resources
+C:\Users\Galaxis\documents\visual studio 2015\Projects\Prototyp1\Prototyp1\obj\Release\Prototyp1.csproj.GenerateResource.Cache
+C:\Users\Galaxis\documents\visual studio 2015\Projects\Prototyp1\Prototyp1\obj\Release\Prototyp1.exe
+C:\Users\Galaxis\documents\visual studio 2015\Projects\Prototyp1\Prototyp1\obj\Release\Prototyp1.pdb

@@ -1,7 +1,0 @@
-var searchData=
-[
-  ['cbxgrupa',['cbxGrupa',['../class_dziennik_ocen_1_1_form_zarzadzaj_studentem.html#aa214491bf19dacbdff01bcc4d990b590',1,'DziennikOcen::FormZarzadzajStudentem']]],
-  ['combobox1',['comboBox1',['../class_dziennik_ocen_1_1_form_projekt.html#af9c3f48763789fdf806504520036b588',1,'DziennikOcen::FormProjekt']]],
-  ['commandbuilder',['commandBuilder',['../class_dziennik_ocen_1_1_form_admin.html#ad78cf92a31e4ac705fc1b07f91eccf12',1,'DziennikOcen::FormAdmin']]],
-  ['components',['components',['../class_dziennik_ocen_1_1_form1.html#a7b1d7b5c990e5a9bc92a1755cb4b5b58',1,'DziennikOcen.Form1.components()'],['../class_dziennik_ocen_1_1_form_admin.html#add4f712ca83ab265bf5dc023ae8b7a49',1,'DziennikOcen.FormAdmin.components()'],['../class_dziennik_ocen_1_1_form_projekt.html#a26a32516eb0f6b9653a1146f3f29a508',1,'DziennikOcen.FormProjekt.components()'],['../class_dziennik_ocen_1_1_form_prowadzacy.html#a74ef1b6ab2d81abfa6a0f441ff9e8ec6',1,'DziennikOcen.FormProwadzacy.components()'],['../class_dziennik_ocen_1_1_form_student.html#a51980b83afbb6d6e6a8204c853243527',1,'DziennikOcen.FormStudent.components()'],['../class_dziennik_ocen_1_1_form_zarzadzaj_projektem.html#a6e97af0a821e84d1bc6aea234de2d443',1,'DziennikOcen.FormZarzadzajProjektem.components()'],['../class_dziennik_ocen_1_1_form_zarzadzaj_studentem.html#a541f772925213cefc818120c1b07049e',1,'DziennikOcen.FormZarzadzajStudentem.components()']]]
-];

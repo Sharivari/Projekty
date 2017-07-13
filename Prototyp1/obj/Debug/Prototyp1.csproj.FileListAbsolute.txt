@@ -1,0 +1,9 @@
+c:\users\galaxis\documents\visual studio 2015\Projects\Prototyp1\Prototyp1\bin\Debug\Prototyp1.exe.config
+c:\users\galaxis\documents\visual studio 2015\Projects\Prototyp1\Prototyp1\bin\Debug\Prototyp1.exe
+c:\users\galaxis\documents\visual studio 2015\Projects\Prototyp1\Prototyp1\bin\Debug\Prototyp1.pdb
+c:\users\galaxis\documents\visual studio 2015\Projects\Prototyp1\Prototyp1\obj\Debug\Prototyp1.csprojResolveAssemblyReference.cache
+c:\users\galaxis\documents\visual studio 2015\Projects\Prototyp1\Prototyp1\obj\Debug\Prototyp1.Form1.resources
+c:\users\galaxis\documents\visual studio 2015\Projects\Prototyp1\Prototyp1\obj\Debug\Prototyp1.Properties.Resources.resources
+c:\users\galaxis\documents\visual studio 2015\Projects\Prototyp1\Prototyp1\obj\Debug\Prototyp1.csproj.GenerateResource.Cache
+c:\users\galaxis\documents\visual studio 2015\Projects\Prototyp1\Prototyp1\obj\Debug\Prototyp1.exe
+c:\users\galaxis\documents\visual studio 2015\Projects\Prototyp1\Prototyp1\obj\Debug\Prototyp1.pdb
