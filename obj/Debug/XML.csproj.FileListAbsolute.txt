@@ -1,0 +1,11 @@
+c:\users\galaxis\documents\visual studio 2015\Projects\XML\XML\bin\Debug\XML.exe.config
+c:\users\galaxis\documents\visual studio 2015\Projects\XML\XML\bin\Debug\XML.exe
+c:\users\galaxis\documents\visual studio 2015\Projects\XML\XML\bin\Debug\XML.pdb
+c:\users\galaxis\documents\visual studio 2015\Projects\XML\XML\obj\Debug\XML.csprojResolveAssemblyReference.cache
+c:\users\galaxis\documents\visual studio 2015\Projects\XML\XML\obj\Debug\XML.Form1.resources
+c:\users\galaxis\documents\visual studio 2015\Projects\XML\XML\obj\Debug\XML.Properties.Resources.resources
+c:\users\galaxis\documents\visual studio 2015\Projects\XML\XML\obj\Debug\XML.csproj.GenerateResource.Cache
+c:\users\galaxis\documents\visual studio 2015\Projects\XML\XML\obj\Debug\XML.exe
+c:\users\galaxis\documents\visual studio 2015\Projects\XML\XML\obj\Debug\XML.pdb
+C:\Users\Galaxis\documents\visual studio 2015\Projects\XML\XML\obj\Debug\XML.FormActor.resources
+C:\Users\Galaxis\documents\visual studio 2015\Projects\XML\XML\obj\Debug\XML.FormFilm.resources
