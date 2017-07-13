@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Wywoływane w FormProwadzacy">
+    <Position X="15.813" Y="2.304" Height="0.414" Width="2.228" />
+  </Comment>
+  <Comment CommentText="Okno logowania">
+    <Position X="1.075" Y="1.279" Height="0.433" Width="1.714" />
+  </Comment>
+  <Comment CommentText="Po zalogowaniu przechodzi do jednej z trzech form:&#xD;&#xA;Dla studenta - FormStudent&#xD;&#xA;Dla prowadzaego - FormProwadzacy&#xD;&#xA;Dla administratora - FormAdmin">
+    <Position X="6.037" Y="0.741" Height="0.961" Width="4.833" />
+  </Comment>
+  <Class Name="DziennikOcen.Form1">
+    <Position X="1" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAICAQIBAQIACAAAACAAAUAAQAAAIAAADEAAA=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DziennikOcen.FormAdmin">
+    <Position X="10" Y="2" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>GA2FoBIQqDZyaWRCxVHWAgsaQHApAgWA0QE4PcyIzBg=</HashCode>
+      <FileName>FormAdmin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DziennikOcen.FormProwadzacy">
+    <Position X="3.5" Y="2" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>ATAWgAgFALKwAFAAhBCgDAGiACAgHYIQCQoKAQDAAhA=</HashCode>
+      <FileName>FormProwadzacy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DziennikOcen.FormStudent">
+    <Position X="6.75" Y="2" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>CSCkgAASAmAwgEEAABCQQASKACgIFhAEAEEKkYCIAQA=</HashCode>
+      <FileName>FormStudent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DziennikOcen.FormProjekt">
+    <Position X="14" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAABIIAAKAQAAAQAACACAgCJAgAAAAAAAAAAIAAAgA=</HashCode>
+      <FileName>FormProjekt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DziennikOcen.FormZarzadzajProjektem">
+    <Position X="16" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAJAAAACACAgCAAgAQAAAAAAAAAAAAgA=</HashCode>
+      <FileName>FormZarzadzajProjektem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DziennikOcen.FormZarzadzajStudentem">
+    <Position X="18" Y="3" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAQCAwAFAgIACgIAiCAAgIAAAADAQAAAAAAgA=</HashCode>
+      <FileName>FormZarzadzajStudentem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

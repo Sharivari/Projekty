@@ -1,0 +1,17 @@
+c:\users\galaxis\documents\visual studio 2015\Projects\DziennikOcen\DziennikOcen\bin\Debug\DziennikOcen.exe.config
+c:\users\galaxis\documents\visual studio 2015\Projects\DziennikOcen\DziennikOcen\bin\Debug\DziennikOcen.exe
+c:\users\galaxis\documents\visual studio 2015\Projects\DziennikOcen\DziennikOcen\bin\Debug\DziennikOcen.pdb
+c:\users\galaxis\documents\visual studio 2015\Projects\DziennikOcen\DziennikOcen\bin\Debug\EntityFramework.dll
+c:\users\galaxis\documents\visual studio 2015\Projects\DziennikOcen\DziennikOcen\bin\Debug\EntityFramework.xml
+c:\users\galaxis\documents\visual studio 2015\Projects\DziennikOcen\DziennikOcen\obj\Debug\DziennikOcen.Form1.resources
+c:\users\galaxis\documents\visual studio 2015\Projects\DziennikOcen\DziennikOcen\obj\Debug\DziennikOcen.Properties.Resources.resources
+c:\users\galaxis\documents\visual studio 2015\Projects\DziennikOcen\DziennikOcen\obj\Debug\DziennikOcen.csproj.GenerateResource.Cache
+c:\users\galaxis\documents\visual studio 2015\Projects\DziennikOcen\DziennikOcen\obj\Debug\DziennikOcen.exe
+c:\users\galaxis\documents\visual studio 2015\Projects\DziennikOcen\DziennikOcen\obj\Debug\DziennikOcen.pdb
+c:\users\galaxis\documents\visual studio 2015\Projects\DziennikOcen\DziennikOcen\obj\Debug\DziennikOcen.FormStudent.resources
+C:\Users\Galaxis\documents\visual studio 2015\Projects\DziennikOcen\DziennikOcen\obj\Debug\DziennikOcen.csprojResolveAssemblyReference.cache
+C:\Users\Galaxis\documents\visual studio 2015\Projects\DziennikOcen\DziennikOcen\obj\Debug\DziennikOcen.FormProwadzacy.resources
+C:\Users\Galaxis\documents\visual studio 2015\Projects\DziennikOcen\DziennikOcen\obj\Debug\DziennikOcen.FormZarzadzajStudentem.resources
+C:\Users\Galaxis\documents\visual studio 2015\Projects\DziennikOcen\DziennikOcen\obj\Debug\DziennikOcen.FormZarzadzajProjektem.resources
+C:\Users\Galaxis\documents\visual studio 2015\Projects\DziennikOcen\DziennikOcen\obj\Debug\DziennikOcen.FormProjekt.resources
+C:\Users\Galaxis\documents\visual studio 2015\Projects\DziennikOcen\DziennikOcen\obj\Debug\DziennikOcen.FormAdmin.resources

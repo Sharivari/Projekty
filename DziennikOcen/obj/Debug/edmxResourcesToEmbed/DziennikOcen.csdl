@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DziennikOcenModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="GRUPA">
+    <Key>
+      <PropertyRef Name="id_GRUPY" />
+    </Key>
+    <Property Name="id_GRUPY" Type="Int32" Nullable="false" />
+    <Property Name="nazwa_grupy" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="STUDENT" Relationship="DziennikOcenModel.FK_STUDENT_GRUPA" FromRole="GRUPA" ToRole="STUDENT" />
+  </EntityType>
+  <EntityType Name="PROJEKT">
+    <Key>
+      <PropertyRef Name="id_PROJEKTU" />
+    </Key>
+    <Property Name="id_PROJEKTU" Type="Int32" Nullable="false" />
+    <Property Name="id_PRZEDMIOTU" Type="Int32" />
+    <Property Name="nazwa_projektu" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="opis_projektu" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PRZEDMIOT" Relationship="DziennikOcenModel.FK_PROJEKT_PRZEDMIOT" FromRole="PROJEKT" ToRole="PRZEDMIOT" />
+    <NavigationProperty Name="projekty" Relationship="DziennikOcenModel.FK_projekty_PROJEKT" FromRole="PROJEKT" ToRole="projekty" />
+  </EntityType>
+  <EntityType Name="projekty">
+    <Key>
+      <PropertyRef Name="id_STUDENTA" />
+      <PropertyRef Name="id_PROJEKTU" />
+      <PropertyRef Name="id_PROWADZĄCEGO" />
+    </Key>
+    <Property Name="id_STUDENTA" Type="Int32" Nullable="false" />
+    <Property Name="id_PROJEKTU" Type="Int32" Nullable="false" />
+    <Property Name="id_PROWADZĄCEGO" Type="Int32" Nullable="false" />
+    <Property Name="ocena_projektu" Type="Int32" />
+    <Property Name="data_projektu" Type="DateTime" Precision="3" />
+    <Property Name="uwagi_projektu" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PROJEKT" Relationship="DziennikOcenModel.FK_projekty_PROJEKT" FromRole="projekty" ToRole="PROJEKT" />
+    <NavigationProperty Name="PROWADZĄCY" Relationship="DziennikOcenModel.FK_projekty_PROWADZĄCY" FromRole="projekty" ToRole="PROWADZĄCY" />
+    <NavigationProperty Name="STUDENT" Relationship="DziennikOcenModel.FK_projekty_STUDENT" FromRole="projekty" ToRole="STUDENT" />
+  </EntityType>
+  <EntityType Name="PROWADZĄCY">
+    <Key>
+      <PropertyRef Name="id_PROWADZĄCEGO" />
+    </Key>
+    <Property Name="id_PROWADZĄCEGO" Type="Int32" Nullable="false" />
+    <Property Name="imie" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="nazwisko" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="telefon" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="adres" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="e_mail" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="haslo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="stanowisko" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="projekty" Relationship="DziennikOcenModel.FK_projekty_PROWADZĄCY" FromRole="PROWADZĄCY" ToRole="projekty" />
+    <NavigationProperty Name="przedmioty" Relationship="DziennikOcenModel.FK_przedmioty_PROWADZĄCY" FromRole="PROWADZĄCY" ToRole="przedmioty" />
+  </EntityType>
+  <EntityType Name="PRZEDMIOT">
+    <Key>
+      <PropertyRef Name="id_PRZEDMIOTU" />
+    </Key>
+    <Property Name="id_PRZEDMIOTU" Type="Int32" Nullable="false" />
+    <Property Name="nazwa_przedmiotu" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="opis_przedmiotu" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ECTS" Type="Int32" />
+    <NavigationProperty Name="PROJEKT" Relationship="DziennikOcenModel.FK_PROJEKT_PRZEDMIOT" FromRole="PRZEDMIOT" ToRole="PROJEKT" />
+    <NavigationProperty Name="przedmioty" Relationship="DziennikOcenModel.FK_przedmioty_PRZEDMIOT" FromRole="PRZEDMIOT" ToRole="przedmioty" />
+  </EntityType>
+  <EntityType Name="przedmioty">
+    <Key>
+      <PropertyRef Name="id_STUDENTA" />
+      <PropertyRef Name="id_PROWADZĄCEGO" />
+      <PropertyRef Name="id_PRZEDMIOTU" />
+    </Key>
+    <Property Name="id_STUDENTA" Type="Int32" Nullable="false" />
+    <Property Name="id_PROWADZĄCEGO" Type="Int32" Nullable="false" />
+    <Property Name="id_PRZEDMIOTU" Type="Int32" Nullable="false" />
+    <Property Name="ocena_przedmiotu" Type="Int32" />
+    <Property Name="data_zaliczenia_przedmiotu" Type="DateTime" Precision="3" />
+    <Property Name="uwagi_przedmiotu" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PROWADZĄCY" Relationship="DziennikOcenModel.FK_przedmioty_PROWADZĄCY" FromRole="przedmioty" ToRole="PROWADZĄCY" />
+    <NavigationProperty Name="STUDENT" Relationship="DziennikOcenModel.FK_przedmioty_STUDENT" FromRole="przedmioty" ToRole="STUDENT" />
+    <NavigationProperty Name="PRZEDMIOT" Relationship="DziennikOcenModel.FK_przedmioty_PRZEDMIOT" FromRole="przedmioty" ToRole="PRZEDMIOT" />
+  </EntityType>
+  <EntityType Name="STUDENT">
+    <Key>
+      <PropertyRef Name="id_STUDENTA" />
+    </Key>
+    <Property Name="id_STUDENTA" Type="Int32" Nullable="false" />
+    <Property Name="id_GRUPY" Type="Int32" Nullable="false" />
+    <Property Name="imie" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="nazwisko" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="telefon" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="adres" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="e_mail" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="haslo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GRUPA" Relationship="DziennikOcenModel.FK_STUDENT_GRUPA" FromRole="STUDENT" ToRole="GRUPA" />
+    <NavigationProperty Name="projekty" Relationship="DziennikOcenModel.FK_projekty_STUDENT" FromRole="STUDENT" ToRole="projekty" />
+    <NavigationProperty Name="przedmioty" Relationship="DziennikOcenModel.FK_przedmioty_STUDENT" FromRole="STUDENT" ToRole="przedmioty" />
+  </EntityType>
+  <EntityContainer Name="DziennikOcenEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="GRUPA" EntityType="Self.GRUPA" />
+    <EntitySet Name="PROJEKT" EntityType="Self.PROJEKT" />
+    <EntitySet Name="projekty" EntityType="Self.projekty" />
+    <EntitySet Name="PROWADZĄCY" EntityType="Self.PROWADZĄCY" />
+    <EntitySet Name="PRZEDMIOT" EntityType="Self.PRZEDMIOT" />
+    <EntitySet Name="przedmioty" EntityType="Self.przedmioty" />
+    <EntitySet Name="STUDENT" EntityType="Self.STUDENT" />
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(DziennikOcenModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(DziennikOcenModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+    <AssociationSet Name="FK_STUDENT_GRUPA" Association="DziennikOcenModel.FK_STUDENT_GRUPA">
+      <End Role="GRUPA" EntitySet="GRUPA" />
+      <End Role="STUDENT" EntitySet="STUDENT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PROJEKT_PRZEDMIOT" Association="DziennikOcenModel.FK_PROJEKT_PRZEDMIOT">
+      <End Role="PRZEDMIOT" EntitySet="PRZEDMIOT" />
+      <End Role="PROJEKT" EntitySet="PROJEKT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_projekty_PROJEKT" Association="DziennikOcenModel.FK_projekty_PROJEKT">
+      <End Role="PROJEKT" EntitySet="PROJEKT" />
+      <End Role="projekty" EntitySet="projekty" />
+    </AssociationSet>
+    <AssociationSet Name="FK_projekty_PROWADZĄCY" Association="DziennikOcenModel.FK_projekty_PROWADZĄCY">
+      <End Role="PROWADZĄCY" EntitySet="PROWADZĄCY" />
+      <End Role="projekty" EntitySet="projekty" />
+    </AssociationSet>
+    <AssociationSet Name="FK_projekty_STUDENT" Association="DziennikOcenModel.FK_projekty_STUDENT">
+      <End Role="STUDENT" EntitySet="STUDENT" />
+      <End Role="projekty" EntitySet="projekty" />
+    </AssociationSet>
+    <AssociationSet Name="FK_przedmioty_PROWADZĄCY" Association="DziennikOcenModel.FK_przedmioty_PROWADZĄCY">
+      <End Role="PROWADZĄCY" EntitySet="PROWADZĄCY" />
+      <End Role="przedmioty" EntitySet="przedmioty" />
+    </AssociationSet>
+    <AssociationSet Name="FK_przedmioty_STUDENT" Association="DziennikOcenModel.FK_przedmioty_STUDENT">
+      <End Role="STUDENT" EntitySet="STUDENT" />
+      <End Role="przedmioty" EntitySet="przedmioty" />
+    </AssociationSet>
+    <AssociationSet Name="FK_przedmioty_PRZEDMIOT" Association="DziennikOcenModel.FK_przedmioty_PRZEDMIOT">
+      <End Role="PRZEDMIOT" EntitySet="PRZEDMIOT" />
+      <End Role="przedmioty" EntitySet="przedmioty" />
+    </AssociationSet>
+  </EntityContainer>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+  <Association Name="FK_STUDENT_GRUPA">
+    <End Type="DziennikOcenModel.GRUPA" Role="GRUPA" Multiplicity="1" />
+    <End Type="DziennikOcenModel.STUDENT" Role="STUDENT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GRUPA">
+        <PropertyRef Name="id_GRUPY" />
+      </Principal>
+      <Dependent Role="STUDENT">
+        <PropertyRef Name="id_GRUPY" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PROJEKT_PRZEDMIOT">
+    <End Type="DziennikOcenModel.PRZEDMIOT" Role="PRZEDMIOT" Multiplicity="0..1" />
+    <End Type="DziennikOcenModel.PROJEKT" Role="PROJEKT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRZEDMIOT">
+        <PropertyRef Name="id_PRZEDMIOTU" />
+      </Principal>
+      <Dependent Role="PROJEKT">
+        <PropertyRef Name="id_PRZEDMIOTU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_projekty_PROJEKT">
+    <End Type="DziennikOcenModel.PROJEKT" Role="PROJEKT" Multiplicity="1" />
+    <End Type="DziennikOcenModel.projekty" Role="projekty" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PROJEKT">
+        <PropertyRef Name="id_PROJEKTU" />
+      </Principal>
+      <Dependent Role="projekty">
+        <PropertyRef Name="id_PROJEKTU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_projekty_PROWADZĄCY">
+    <End Type="DziennikOcenModel.PROWADZĄCY" Role="PROWADZĄCY" Multiplicity="1" />
+    <End Type="DziennikOcenModel.projekty" Role="projekty" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PROWADZĄCY">
+        <PropertyRef Name="id_PROWADZĄCEGO" />
+      </Principal>
+      <Dependent Role="projekty">
+        <PropertyRef Name="id_PROWADZĄCEGO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_projekty_STUDENT">
+    <End Type="DziennikOcenModel.STUDENT" Role="STUDENT" Multiplicity="1" />
+    <End Type="DziennikOcenModel.projekty" Role="projekty" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="STUDENT">
+        <PropertyRef Name="id_STUDENTA" />
+      </Principal>
+      <Dependent Role="projekty">
+        <PropertyRef Name="id_STUDENTA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_przedmioty_PROWADZĄCY">
+    <End Type="DziennikOcenModel.PROWADZĄCY" Role="PROWADZĄCY" Multiplicity="1" />
+    <End Type="DziennikOcenModel.przedmioty" Role="przedmioty" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PROWADZĄCY">
+        <PropertyRef Name="id_PROWADZĄCEGO" />
+      </Principal>
+      <Dependent Role="przedmioty">
+        <PropertyRef Name="id_PROWADZĄCEGO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_przedmioty_STUDENT">
+    <End Type="DziennikOcenModel.STUDENT" Role="STUDENT" Multiplicity="1" />
+    <End Type="DziennikOcenModel.przedmioty" Role="przedmioty" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="STUDENT">
+        <PropertyRef Name="id_STUDENTA" />
+      </Principal>
+      <Dependent Role="przedmioty">
+        <PropertyRef Name="id_STUDENTA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_przedmioty_PRZEDMIOT">
+    <End Type="DziennikOcenModel.PRZEDMIOT" Role="PRZEDMIOT" Multiplicity="1" />
+    <End Type="DziennikOcenModel.przedmioty" Role="przedmioty" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRZEDMIOT">
+        <PropertyRef Name="id_PRZEDMIOTU" />
+      </Principal>
+      <Dependent Role="przedmioty">
+        <PropertyRef Name="id_PRZEDMIOTU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
